@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+			text-decoration: none;
+		}
+		.navbar{
+			background: crimson; font-family: calibri; padding-right: 15px;padding-left: 10px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+</style>
+<body>
+    <header id="header">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My PortFolio</h1>
+          <nav  id="nav">
+              <ul id="navlist">
+                  <li id="li1"><a href="#" id="projects link">Projects</a></li>
+                  <li id="li2"><a href="#" id="about">About</a></li>
+                  <li id="li3"><a href="#" id="contact">Contact</a> </li>
+                  
+              </ul>
+          </nav>
+
+    </header>
+    <section id="about1">
+        <h2>About me</h2>
+        <div id="aboutcontent">
+            <img  id="img" src="./Image.jpeg" >
+            <p>Hello,My name is Praveen.I am a Web developer living in Hyderabad.I make Web applicatons,usually with React JS.</p>
+        </div>
+    </section>
+    <section id="contact section">
+        <h2>Contact me</h2>
+        <form id="contact form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        const header= document.getElementById("header");
+        header.style.backgroundColor="#7e9a9a";
+        header.style.color="black";
+        header.style.padding="20px";
+        header.style.textAlign="center";
+
+      
+        const section1 = document.getElementById("about1"); 
+        section1.style.backgroundColor = "#db98"; 
+        section1.style.color="black";
+        section1.style.padding="20px";
+        section1.style.textAlign="center";
+
+        const contact=document.getElementById("contact section")
+       
+        contact.style.backgroundColor="#f5fffa";
+        contact.style.color="black";
+        contact.style.padding="20px";
+        contact.style.textAlign="center";
+
+        let image=document.getElementById("img");
+        image.style.borderRadius="50%";
+        image.style.height="200px";
+        image.style.width="200px";
+         
+       
+        
+
+
+    </script>
+</body>
+</html>
